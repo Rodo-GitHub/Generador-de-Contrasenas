@@ -12,7 +12,7 @@ Letras = string.ascii_letters
 Numeros = string.digits
 Simbolos = string.punctuation
 clear();
-print("\n\t  GENERADOR DE CONTRASEÑAS EN PYTHON\n\n")
+print("\n\n\t  GENERADOR DE CONTRASEÑAS EN PYTHON\n\n")
 Total = ''
 A_Letras = str(input("    01.- AGREGAR LETRAS (Y/N): "))
 if (A_Letras == 'y' or A_Letras == 'Y'):
@@ -30,5 +30,5 @@ for j in range(N_Contrasenas):
     F_Contrasenas = ''
     for i in range(N_Caracteres):
         F_Contrasenas += ''.join(secrets.choice(Total))
-    print("\t",F_Contrasenas)
+    print("\n\t",F_Contrasenas)
 print("\n")
